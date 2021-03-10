@@ -1,0 +1,2 @@
+rootProject.name='bucketlist'
+include ':app'

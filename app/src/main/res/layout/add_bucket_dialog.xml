@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_bucket_dialog"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/BucketName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bucket name:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="gravity"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/BucketNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:gravity="left" />
+
+    <EditText
+        android:id="@+id/BucketNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="50dp"
+        android:enabled="true"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textColor=" #000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/ButtonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BucketNameEditText"
+        app:layout_constraintVertical_bias="0.406">
+
+        <Button
+            android:id="@+id/Done"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="#00b300"
+            android:text="Submit"
+            android:layout_marginRight="20dp"
+            android:textColor="#FFFF"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background=" #ff3300"
+            android:text="@android:string/cancel"
+            android:textColor="#FFFF"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
